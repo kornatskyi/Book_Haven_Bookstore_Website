@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Haven Bookstore</title>
+</head>
+
+<body>
+  <header>
+    <div class="branding" role="banner">
+      <img src="assets/Client3_LogoPalette1_C7B65E.png" alt="Book Haven Bookstore logo" width="120" height="120" />
+      <h1>Book Haven Bookstore</h1>
+      <p class="tagline">Celebrating the written word & fostering literary discovery</p>
+    </div>
+    <nav aria-label="Primary" role="navigation">
+      <ul>
+        <li><a href="index.html" aria-current="false">Home</a></li>
+        <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        <li><a href="contact.html" aria-current="false">About &amp; Contact</a></li>
+        <li><a href="customer.html" aria-current="false">Customer</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+
+    <section aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Featured Products Gallery</h2>
+      <p>
+        Browse our featured books, magazines, and merchandise. Click "Add to Cart" to begin a custom order—
+        you can finalize details on the <a href="contact.html">About &amp; Contact</a> page.
+      </p>
+      <div class="catalog_layout" role="group" aria-label="Catalog layout">
+        <aside class="catalog_sidebar" aria-labelledby="catalog-categories-heading">
+          <h3 id="catalog-categories-heading">Categories</h3>
+          <nav aria-label="Product categories">
+            <ul class="catalog_categories">
+              <li><a href="#cat-new" aria-current="page">New arrivals</a></li>
+              <li><a href="#cat-fiction">Fiction</a></li>
+              <li><a href="#cat-fantasy">Fantasy</a></li>
+              <li><a href="#cat-magazines">Magazines</a></li>
+              <li><a href="#cat-stationery">Stationery</a></li>
+              <li><a href="#cat-gifts">Gifts</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+        <div class="catalog_content">
+          <div class="catalog_grid" role="list">
+            <article class="product-card" role="listitem">
+
+              <figure class="product-card_media">
+                <img src="assets/Client3_Book1.png" alt="Brie Mine 4Ever book cover" width="260" height="260" />
+              </figure>
+              <h4 id="p1-title" class="product-card_title">Brie Mine 4Ever</h4>
+              <p class="product-card_meta">Food &amp; Lifestyle</p>
+              <button type="button" class="product-card_cta" data-sku="brie-mine-4ever">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem">
+              <figure class="product-card_media">
+                <img src="assets/Client3_Book2.png" alt="Glory Riders book cover" width="260" height="260" />
+              </figure>
+              <h4 id="p2-title" class="product-card_title">Glory Riders</h4>
+              <p class="product-card_meta">Contemporary Fiction</p>
+              <button type="button" class="product-card_cta" data-sku="glory-riders">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem">
+              <figure class="product-card_media">
+                <img src="assets/Client3_Book3.png" alt="Sorcerer’s Shadowed Chronicles book cover" width="260"
+                  height="260" />
+              </figure>
+              <h4 id="p3-title" class="product-card_title">Sorcerer’s Shadowed Chronicles</h4>
+              <p class="product-card_meta">Fantasy</p>
+              <button type="button" class="product-card_cta" data-sku="sorcerers-shadowed-chronicles">Add to
+                Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem">
+              <figure class="product-card_media">
+                <img src="assets/Client3_Magazine1.png" alt="Eat. magazine cover" width="260" height="260" />
+              </figure>
+              <h4 id="p4-title" class="product-card_title">Eat.</h4>
+              <p class="product-card_meta">Food Magazine</p>
+              <button type="button" class="product-card_cta" data-sku="eat-magazine">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem">
+              <figure class="product-card_media">
+                <img src="assets/Client3_Magazine2.png" alt="Ball magazine cover" width="260" height="260" />
+              </figure>
+              <h4 id="p5-title" class="product-card_title">Ball</h4>
+              <p class="product-card_meta">Sports Magazine</p>
+              <button type="button" class="product-card_cta" data-sku="ball-magazine">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem">
+              <figure class="product-card_media">
+                <img src="assets/Client3_Magazine3.png" alt="Travel magazine cover" width="260" height="260" />
+              </figure>
+              <h4 id="p6-title" class="product-card_title">Travel</h4>
+              <p class="product-card_meta">Travel Magazine</p>
+              <button type="button" class="product-card_cta" data-sku="travel-magazine">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem">
+              <figure class="product-card_media">
+                <img src="assets/Client3_ToteBag.png" alt='Canvas tote bag printed "ALL I DO IS READ READ READ"'
+                  width="260" height="260" />
+              </figure>
+              <h4 id="p7-title" class="product-card_title">Canvas Tote</h4>
+              <p class="product-card_meta">Merch • Bag</p>
+              <button type="button" class="product-card_cta" data-sku="tote-bag-read">Add to Cart</button>
+            </article>
+
+            <article class="product-card" role="listitem">
+              <figure class="product-card_media">
+                <img src="assets/Client3_Stickers.png" alt="Set of four Book Haven stickers" width="260" height="260" />
+              </figure>
+              <h4 id="p8-title" class="product-card_title">Stickers (Set of 4)</h4>
+              <p class="product-card_meta">Merch • Stickers</p>
+              <button type="button" class="product-card_cta" data-sku="stickers">Add to Cart</button>
+            </article>
+          </div>
+
+          <div class="catalog_more">
+            <button type="button" class="catalog_see-more" aria-label="See more products">See more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+  </main>
+  <footer>
+    <section aria-labelledby="hours-heading">
+      <h2 id="hours-heading">Hours of Operation</h2>
+      <ul>
+        <li>Monday–Friday: 9 a.m. – 8 p.m.</li>
+        <li>Saturday: 10 a.m. – 6 p.m.</li>
+        <li>Sunday: 11 a.m. – 5 p.m.</li>
+      </ul>
+    </section>
+
+    <section>
+      <p>Find us at</p>
+      <ul class="catalog_categories">
+        <li><a href="https://www.facebook.com/" aria-current="page">Facebook</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+        <li><a href="https://x.com/">X</a></li>
+        <li><a href="https://www.youtube.com/">YouTube</a></li>
+      </ul>
+    </section>
+
+    <p>&copy; 2025 Book Haven Bookstore • This educational project uses licensed images as provided by the client brief.
+    </p>
+  </footer>
+</body>
+
+</html>
