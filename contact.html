@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Book Haven Bookstore</title>
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
   <header>
@@ -27,17 +29,18 @@
     <section aria-labelledby="about-heading">
       <h2 id="about-heading">About Us</h2>
       <p>
-        Book Haven Bookstore serves a broad audience of book lovers and knowledge seekers. Our website exists to celebrate
+        Book Haven Bookstore serves a broad audience of book lovers and knowledge seekers. Our website exists to
+        celebrate
         the written word, create an inviting digital space for discovery, and support intellectual growth.
       </p>
     </section>
 
     <section aria-labelledby="contact-heading">
       <h2 id="contact-heading">Contact &amp; Custom Orders</h2>
-      <p>Use the form below to send feedback or request a custom order. Required fields are marked with an asterisk (*).</p>
+      <p>Use the form below to send feedback or contact us. Required fields are marked with an asterisk (*).</p>
 
       <form action="#" method="post" aria-describedby="contact-instructions">
-        <p id="contact-instructions">Provide your contact info and order details. We will confirm availability and pickup/shipping options.</p>
+        <p id="contact-instructions">Provide your contact info and order details.</p>
 
         <fieldset>
           <legend>Contact Information</legend>
@@ -50,33 +53,15 @@
           <label for="phone">Phone:</label>
           <input id="phone" name="phone" type="tel" placeholder="e.g., 206-555-1234" pattern="[0-9\-\+\(\)\s]{7,}" />
 
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" type="text" placeholder="Write your message here..."></textarea>
+
+
           <fieldset>
             <legend>Preferred Contact Method</legend>
             <label><input type="radio" name="contact_method" value="email" checked /> Email</label>
             <label><input type="radio" name="contact_method" value="phone" /> Phone</label>
           </fieldset>
-        </fieldset>
-
-        <fieldset>
-          <legend>Custom Order</legend>
-          <label for="title">Book/Item Title *:</label>
-          <input id="title" name="title" type="text" required />
-
-          <label for="format">Format:</label>
-          <select id="format" name="format">
-            <option value="">Select…</option>
-            <option>Paperback</option>
-            <option>Hardcover</option>
-            <option>eBook</option>
-            <option>Magazine</option>
-            <option>Merchandise</option>
-          </select>
-
-          <label for="quantity">Quantity:</label>
-          <input id="quantity" name="quantity" type="number" min="1" step="1" value="1" />
-
-          <label for="message">Notes / Feedback:</label>
-          <textarea id="message" name="message" rows="6" placeholder="Tell us about your request or share feedback…"></textarea>
         </fieldset>
 
         <button type="submit">Submit</button>
@@ -85,7 +70,7 @@
     </section>
 
   </main>
- <footer>
+  <footer>
     <section aria-labelledby="hours-heading">
       <h2 id="hours-heading">Hours of Operation</h2>
       <ul>
@@ -109,4 +94,5 @@
     </p>
   </footer>
 </body>
+
 </html>
