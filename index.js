@@ -28,9 +28,12 @@ function clearCart() {
   if (cartItemsUl) {
     cartItemsUl.replaceChildren();
   }
+  alert("Cleared Cart!");
 }
 
 function processOrder() {
+  items = JSON.parse(sessionStorage.getItem(ITEMS_KEY) || "[]");
+  alert("Your order is submitted! You ordered " + items.join(", "));
   sessionStorage.setItem(ITEMS_KEY, JSON.stringify([]));
   const cartItemsUl = document.getElementById("cartItems");
   if (cartItemsUl) {
@@ -39,8 +42,14 @@ function processOrder() {
 }
 
 function handleContactSubmit(event) {
-  event.preventDefault();
-  const form = event.target.closest("form");
+  event.preventDefault(); // Prevent form from submitting to URL
+  const form = event.target;
+
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
   const formData = {
     name: form.querySelector("#name").value,
     email: form.querySelector("#email").value,
@@ -55,6 +64,8 @@ function handleContactSubmit(event) {
   submissions.push(formData);
   localStorage.setItem(CONTACT_FORM_KEY, JSON.stringify(submissions));
 
+  // Show success message to user
+  alert("Thank you for your message! We'll get back to you soon.");
   form.reset();
 }
 
@@ -119,10 +130,8 @@ document.addEventListener("DOMContentLoaded", function () {
     processOrderBtn.addEventListener("click", processOrder);
   }
 
-  const contactFormSubmitButton = document.getElementById(
-    "contactFormSubmitButton"
-  );
-  if (contactFormSubmitButton) {
-    contactFormSubmitButton.addEventListener("click", handleContactSubmit);
+  const contactForm = document.getElementById("contactForm");
+  if (contactForm) {
+    contactForm.addEventListener("submit", handleContactSubmit);
   }
 });
