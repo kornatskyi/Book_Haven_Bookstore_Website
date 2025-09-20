@@ -10,36 +10,36 @@
 
 <body>
   <header>
-    <div class="header_container">
-      <div class="branding" role="banner">
-        <img src="assets/Client3_LogoPalette1_C7B65E.png" width="120" height="120" />
+    <div class="branding">
+      <img src="assets/Client3_LogoPalette1_C7B65E.png" width="120" height="120" />
+      <div class="header_title">
         <h1>Book Haven Bookstore</h1>
         <p class="tagline">Celebrating the written word & fostering literary discovery</p>
       </div>
-      <nav class="navigation_links" role="navigation">
-        <ul>
-          <li><a href="index.html" aria-current="false">Home</a></li>
-          <li><a href="gallery.html" aria-current="false">Gallery</a></li>
-          <li><a href="aboutus.html" aria-current="false">About &amp; Contact</a></li>
-          <li><a href="community.html" aria-current="page">Community</a></li>
-        </ul>
-      </nav>
     </div>
+    <nav class="navigation_links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="aboutus.html">About &amp; Contact</a></li>
+        <li><a href="customer.html">Community</a></li>
+      </ul>
+    </nav>
   </header>
   <main id="main">
 
-    <section aria-labelledby="gallery-heading">
-      <h2 id="gallery-heading">Featured Products Gallery</h2>
+    <section>
+      <h2>Featured Products Gallery</h2>
       <p>
         Browse our featured books, magazines, and merchandise. Click "Add to Cart" to begin a custom order—
         you can finalize details on the <a href="aboutus.html">About &amp; Contact</a> page.
       </p>
-      <div class="catalog_layout" role="group" aria-label="Catalog layout">
-        <aside class="catalog_sidebar" aria-labelledby="catalog-categories-heading">
-          <h3 id="catalog-categories-heading">Categories</h3>
-          <nav aria-label="Product categories">
+      <div class="catalog_layout">
+        <aside class="catalog_sidebar">
+          <h3>Categories</h3>
+          <nav>
             <ul class="catalog_categories">
-              <li><a href="#cat-new" aria-current="page">New arrivals</a></li>
+              <li><a href="#cat-new">New arrivals</a></li>
               <li><a href="#cat-fiction">Fiction</a></li>
               <li><a href="#cat-fantasy">Fantasy</a></li>
               <li><a href="#cat-magazines">Magazines</a></li>
@@ -50,22 +50,21 @@
         </aside>
 
         <div class="catalog_content">
-          <div class="catalog_grid" role="list">
-            <article class="product-card" role="listitem">
-
+          <div class="catalog_grid">
+            <article class="product-card">
               <figure class="product-card_media">
                 <img src="assets/Client3_Book1.png" alt="Brie Mine 4Ever book cover" width="260" height="260" />
               </figure>
-              <h4 id="p1-title" class="product-card_title">Brie Mine 4Ever</h4>
+              <h4 class="product-card_title">Brie Mine 4Ever</h4>
               <p class="product-card_meta">Food &amp; Lifestyle</p>
               <button type="button" class="product-card_cta" data-sku="brie-mine-4ever">Add to Cart</button>
             </article>
 
-            <article class="product-card" role="listitem">
+            <article class="product-card">
               <figure class="product-card_media">
                 <img src="assets/Client3_Book2.png" alt="Glory Riders book cover" width="260" height="260" />
               </figure>
-              <h4 id="p2-title" class="product-card_title">Glory Riders</h4>
+              <h4 class="product-card_title">Glory Riders</h4>
               <p class="product-card_meta">Contemporary Fiction</p>
               <button type="button" class="product-card_cta" data-sku="glory-riders">Add to Cart</button>
             </article>
@@ -137,27 +136,25 @@
     </section>
   </main>
   <footer>
-    <section aria-labelledby="hours-heading">
-      <h2 id="hours-heading">Hours of Operation</h2>
-      <ul>
-        <li>Monday–Friday: 9 a.m. – 8 p.m.</li>
-        <li>Saturday: 10 a.m. – 6 p.m.</li>
-        <li>Sunday: 11 a.m. – 5 p.m.</li>
-      </ul>
-    </section>
-
     <section>
-      <p>Find us at</p>
-      <ul class="catalog_categories">
-        <li><a href="https://www.facebook.com/" aria-current="page">Facebook</a></li>
-        <li><a href="https://www.instagram.com/">Instagram</a></li>
-        <li><a href="https://x.com/">X</a></li>
-        <li><a href="https://www.youtube.com/">YouTube</a></li>
-      </ul>
+      <div class="social_media_links">
+        <p>Find us at:</p>
+        <ul class="catalog_categories">
+          <li><a href="https://www.facebook.com/" aria-current="page">Facebook</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+          <li><a href="https://x.com/">X</a></li>
+          <li><a href="https://www.youtube.com/">YouTube</a></li>
+        </ul>
+      </div>
     </section>
-
-    <p>&copy; 2025 Book Haven Bookstore • This educational project uses licensed images as provided by the client brief.
-    </p>
+    <nav class="footer_navigation_links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="aboutus.html">About &amp; Contact</a></li>
+        <li><a href="customer.html">Community</a></li>
+      </ul>
+    </nav>
   </footer>
 </body>
 
