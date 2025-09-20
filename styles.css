@@ -209,7 +209,7 @@ strong {
   font-weight: bold;
 }
 
-form {
+.contact_form {
   max-width: 600px;
   margin: 2rem auto;
   padding: 2rem;
@@ -409,6 +409,15 @@ textarea:required + label::after {
   font-weight: bold;
 }
 
+.customer_review_card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
 footer {
   background-color: var(--color-inkwell-blue);
   color: var(--color-parchment-white);
@@ -422,8 +431,18 @@ footer {
 
 .social_media_links a {
   color: var(--color-parchment-white);
-  text-decoration: none;
-  transition: color 0.3s ease;
+}
+
+.footer_form {
+  width: 300px;
+  color: var(--color-aged-gold);
+}
+.footer_form label {
+  color: var(--color-aged-gold);
+}
+.footer_form_email_input {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer_navigation_links ul {
@@ -439,4 +458,12 @@ footer a:hover {
   color: var(--color-aged-gold);
   text-decoration: none;
   width: 100%;
+}
+
+footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
 }
