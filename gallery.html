@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Book Haven Bookstore</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -31,8 +32,7 @@
     <section>
       <h2>Featured Products Gallery</h2>
       <p>
-        Browse our featured books, magazines, and merchandise. Click "Add to Cart" to begin a custom order—
-        you can finalize details on the <a href="aboutus.html">About &amp; Contact</a> page.
+        Click "Add to Cart" to begin an order
       </p>
       <div class="catalog_layout">
         <aside class="catalog_sidebar">
@@ -47,6 +47,7 @@
               <li><a href="#cat-gifts">Gifts</a></li>
             </ul>
           </nav>
+          <button id="viewCart">View cart</button>
         </aside>
 
         <div class="catalog_content">
@@ -164,6 +165,18 @@
       </ul>
     </nav>
   </footer>
+  <div id="cartModalContainer" class="cart_modal_container" style="visibility: hidden;">
+    <div class="cart_modal">
+      <h4>Your Cart</h4>
+      <ul id="cartItems">
+      </ul>
+      <div class="cart_buttons">
+        <button id="clearCart">Clear Cart</button>
+        <button id="processOrder">Process Order</button>
+        <button id="closeCart">Close</button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

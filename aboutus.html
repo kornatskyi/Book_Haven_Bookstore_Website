@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Book Haven Bookstore</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -53,7 +54,7 @@
       <h2>Contact &amp; Custom Orders</h2>
       <p>Use the form below to send feedback or contact us. Required fields are marked with an asterisk (*).</p>
 
-      <form class="contact_form" action="#" method="post">
+      <form id="contactForm" class="contact_form" action="#" method="post">
         <p>Provide your contact info and order details.</p>
 
         <fieldset>
@@ -78,7 +79,7 @@
           </fieldset>
         </fieldset>
 
-        <button type="submit">Submit</button>
+        <button id="contactFormSubmitButton" type="submit">Submit</button>
         <button type="reset">Reset</button>
       </form>
     </section>

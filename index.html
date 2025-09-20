@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Book Haven Bookstore</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="index.js"></script>
 </head>
 
 <body>
@@ -70,7 +71,10 @@
               <li><a href="#cat-gifts">Gifts</a></li>
             </ul>
           </nav>
+          <button id="viewCart">View cart</button>
         </aside>
+
+
 
         <div class="catalog_content">
           <div class="catalog_grid">
@@ -158,6 +162,8 @@
       </div>
     </section>
 
+
+
   </main>
   <footer>
     <section>
@@ -188,6 +194,18 @@
       </ul>
     </nav>
   </footer>
+  <div id="cartModalContainer" class="cart_modal_container" style="visibility: hidden;">
+    <div class="cart_modal">
+      <h4>Your Cart</h4>
+      <ul id="cartItems">
+      </ul>
+      <div class="cart_buttons">
+        <button id="clearCart">Clear Cart</button>
+        <button id="processOrder">Process Order</button>
+        <button id="closeCart">Close</button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
